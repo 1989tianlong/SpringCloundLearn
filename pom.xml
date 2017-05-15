@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>EurekaServer</module>
-        <module>ComputeServiceApp</module>
+        <module>service-A</module>
         <module>eureka-feign</module>
         <module>config-server</module>
         <module>api-gateway</module>
@@ -35,6 +35,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
